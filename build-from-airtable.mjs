@@ -118,7 +118,8 @@ async function main() {
 </body>
 </html>`;
 
-  await fs.writeFile("index.html", html, "utf8");
+  await fs.mkdir("public", { recursive: true });
+  await fs.writeFile("public/index.html", html, "utf8");
   console.log("✅ index.html generated from Airtable");
 }
 
