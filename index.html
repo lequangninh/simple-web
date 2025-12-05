@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Do This Before Deploying to Vercel</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Do This Before Deploying to Vercel</h1>
+      <p class="subtitle">Learn how your app really runs before pushing it to any platform as a service</p>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="card">
+      <h2>1. Try a VPS First</h2>
+      <p>Spin up a cheap VPS on DigitalOcean or a similar provider. Use it for a few days to understand how hosting actually works behind the scenes.</p>
+      <ul><li>Connect with ssh</li><li>Set up SSH keys</li><li>Run basic Linux commands</li></ul>
+    </section>
+
+    <section class="card">
+      <h2>2. Learn Server Basics</h2>
+      <p>Get comfortable with working in the terminal. Learn how to manage files, processes, and logs on a remote machine.</p>
+      <ul><li>Use ls, cd, pwd, cat, grep</li><li>Edit files with vim, nano, or similar</li><li>Update your system with apt or yum</li></ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Run Your App Manually</h2>
+      <p>Deploy your app the “hard way” at least once. Clone your repo onto the server, install dependencies, and run the server process.</p>
+      <ul><li>git clone your project</li><li>Install dependencies (e.g. npm install)</li><li>Start the app (e.g. npm run start)</li></ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Put a Reverse Proxy in Front</h2>
+      <p>Use Nginx or Caddy to serve your app over HTTPS and map a real domain name to your server.</p>
+      <ul><li>Buy a domain and point DNS to your VPS IP</li><li>Configure Nginx/Caddy to route traffic to your app port</li><li>Enable HTTPS using Let’s Encrypt or Caddy’s auto TLS</li></ul>
+    </section>
+
+    <section class="card card highlight">
+      <h2>5. Then Appreciate Vercel</h2>
+      <p>Once you’ve done all this manually, you’ll really appreciate how platforms like Vercel, Railway, and Fly.io automate the pain away. But now you’ll understand what’s happening under the hood.</p>
+      
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Happy coding — and don’t skip the fundamentals</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "simple-web-cms",
+  "version": "1.0.0",
+  "description": "Simple static site whose content is generated from Airtable",
+  "type": "module",
+  "scripts": {
+    "build": "node build-from-airtable.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
